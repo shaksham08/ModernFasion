@@ -1,0 +1,27 @@
+:root {
+  --black-overlay--light: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: "Roboto Serif", sans-serif;
+}
+
+.d--flex {
+  display: flex;
+}
+
+.flex__direction--column {
+  flex-direction: column;
+}
+
+.align__item--center {
+  align-items: center;
+}
+
+.justify__content--center {
+  justify-content: center;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
