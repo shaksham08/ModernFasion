@@ -1,3 +1,7 @@
+main {
+  padding: 0rem 5rem;
+}
+
 .nav {
   height: 10vh;
   box-shadow: 0px 4px 11px -8px var(--black-primary);
@@ -8,10 +12,6 @@
 .nav__link i {
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
-}
-
-.hero {
-  padding: 2rem;
 }
 
 .hero__container {
@@ -50,4 +50,94 @@
   font-size: 1.5rem;
   font-weight: 200;
   color: var(--gray-medium-primary);
+}
+
+.category__card {
+  height: 24rem;
+  min-width: 30%;
+  position: relative;
+  cursor: pointer;
+}
+
+.category__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category__card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  height: 9rem;
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black-primary);
+  background-color: var(--white);
+  opacity: 0.8;
+}
+
+.category__card__content:hover {
+  opacity: 0.9;
+}
+
+.category__container {
+  gap: 2rem;
+}
+
+.category__card {
+  background-color: var(--black-primary);
+  flex: 1 1 auto;
+  border: 1px solid var(--black-primary);
+  padding: 0;
+  overflow: hidden;
+}
+
+.category__card img:hover {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.card__large {
+  height: 38rem;
+}
+
+.category__card__title {
+  font-weight: bold;
+  margin: 0 6px 0;
+  font-size: 2.2rem;
+  color: var(--gray-dark-primary);
+}
+
+.category__card__subtitle {
+  font-weight: lighter;
+  font-size: 1.6rem;
+  color: var(--gray-dark-primary);
+}
+
+.footer {
+  background: var(--gray-light-primary);
+  min-height: 10vh;
+  width: 100%;
+  color: var(--gray-dark-primary);
+  font-weight: 400;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0px -1px 3px -1px var(--black-primary);
+  -webkit-box-shadow: 0px -1px 3px -1px var(--black-primary);
+  -moz-box-shadow: 0px -1px 3px -1px var(--black-primary);
+}
+
+.footer__links {
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.footer img {
+  height: 4rem;
 }
