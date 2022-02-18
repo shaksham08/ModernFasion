@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Fashion | Clothes From Popular Brands</title>
+    <!-- Importing Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importing Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <!-- Importing the component library -->
+    <link
+      rel="stylesheet"
+      href="https://sugar-ui.vercel.app/componentfinalcss/component.css"
+    />
+    <link rel="stylesheet" href="../../styles/nav.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div>
+          <a class="nav__brand" href="./index.html"
+            ><img src="../../assets/MFLOGOTEXT.png" alt=""
+          /></a>
+        </div>
+        <div class="nav__links">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" aria-current="page" href="./index.html"
+                >Shop</a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span>Login</span>
+                <i class="ri-user-line"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" aria-current="page" href="#">
+                <span> WishList </span><i class="ri-heart-line"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"
+                ><span>Cart</span>
+                <i class="ri-shopping-cart-2-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main__container">
+        <div class="sidebar">
+          <div
+            class="filters d--flex align__item--center justify__content--space-between p-2"
+          >
+            <p>Filters</p>
+            <p>Clear</p>
+          </div>
+          <div class="filter__price p-2">
+            <label for="price">Price</label>
+            <input
+              class="mt-1"
+              type="range"
+              id="price"
+              name="volume"
+              min="0"
+              max="10000"
+              list="tickMarks"
+            />
+            <datalist id="tickMarks">
+              <option value="0" label="0">1k</option>
+              <option value="2000"></option>
+              <option value="4000"></option>
+              <option value="6000"></option>
+              <option value="8000"></option>
+              <option value="100000" label="10k"></option>
+            </datalist>
+            <div
+              class="filter__price__labels d--flex justify__content--space-between"
+            >
+              <p>1k</p>
+              <p>5k</p>
+              <p>10k</p>
+            </div>
+          </div>
+          <div class="filter__checkbox p-2">
+            <p class="mb-2">Categories</p>
+            <ul class="list__style--none">
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="Hats" id="hats" />
+                <label for="hats">Hats</label>
+              </li>
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="Shoes" id="Shoes" />
+                <label for="Shoes">Shoes</label>
+              </li>
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="Jackets" id="Jackets" />
+                <label for="Jackets">Jackets</label>
+              </li>
+
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="Men" id="Men" />
+                <label for="Men">Men</label>
+              </li>
+
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="Women" id="Women" />
+                <label for="Women">Women</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter__checkbox p-2">
+            <p class="mb-2">Rating</p>
+            <ul class="list__style--none">
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="1star" id="1star" />
+                <label for="1star">1 stars</label>
+              </li>
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="2star" id="2star" />
+                <label for="2star">2 stars</label>
+              </li>
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="3star" id="3star" />
+                <label for="3star">3 stars</label>
+              </li>
+
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="4star" id="4star" />
+                <label for="4star">4 stars</label>
+              </li>
+
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="5star" id="5star" />
+                <label for="5star">5 stars</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter__checkbox p-2">
+            <p class="mb-2">Price</p>
+            <ul class="list__style--none">
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="lowToHigh" id="lowToHigh" />
+                <label for="lowToHigh">Price - Low To High</label>
+              </li>
+              <li class="filter__checkbox__item mb-1">
+                <input type="checkbox" name="highToLow" id="highToLow" />
+                <label for="highToLow">Price - High To Low</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="products p-4 d--flex flex--wrap justify__content--center">
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <div class="card__overlay__container">
+              <img class="card__img" src="../../assets/hat1.png" alt="img" />
+              <small class="card__badge">Must Buy</small>
+            </div>
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="card card__vertical">
+            <img class="card__img" src="../../assets/hat1.png" alt="img" />
+            <div class="card__details">
+              <h3 class="card__title">Brown hat</h3>
+            </div>
+            <div class="card__price__section">
+              <strong class="card__selling__price">₹ 1125</strong>
+              <small class="card__original__price">₹ 1500</small>
+              <p class="card__discount">(25% off)</p>
+            </div>
+            <div class="card__buttons">
+              <button type="button" class="btn card__btn">
+                <i class="ri-shopping-cart-2-fill card__icon"></i> Add to cart
+              </button>
+              <button type="button" class="btn">
+                <i class="ri-heart-fill card__icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer d--flex flex__direction--column justify__content--center align__item--center"
+    >
+      <img class="foooter__logo" src="../../assets/MfLogo.png" alt="" />
+      <h2>Designed By : shaksham</h2>
+      <div class="footer__links flex--center">
+        <a href="https://github.com/shaksham08"
+          ><i class="ri-github-fill"></i
+        ></a>
+        <a href="https://twitter.com/ShakshamSinha"
+          ><i class="ri-twitter-fill"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/shaksham-sinha-788a19190/  "
+          ><i class="ri-linkedin-fill"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
