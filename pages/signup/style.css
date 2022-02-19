@@ -60,7 +60,7 @@
 .form__input {
   border: none;
   outline: none;
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
   background-color: var(--gray-light-primary);
   flex: 1;
 }
